@@ -1,5 +1,11 @@
 # h5-previewer
 
+## install
+
+```shell
+yarn add h5-previewer
+```
+
 ## useage
 
 ```jsx
