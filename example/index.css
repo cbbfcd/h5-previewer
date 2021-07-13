@@ -1,0 +1,47 @@
+.root {
+  display: flex;
+}
+
+.root > div:first-child {
+  width: 70%;
+}
+
+.operations_box {
+  flex: 1;
+  margin: 50px auto;
+}
+
+.operations_box .phone_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.operations_box .phone_box button {
+  outline: none;
+  width: 198px;
+  border: 1px solid #1792cf;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #1792cf;
+  height: 40px;
+  margin: 10px 0;
+  color: #fff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.operations_box .phone_box button.active {
+  border: 1px solid #00a8ff;
+  background-color: #00a8ff;
+}
+
+.divider {
+  height: 2px;
+  width: 200px;
+  background-color: pink;
+  margin: 20px 0;
+}

@@ -1,0 +1,52 @@
+.wrapper {
+  transform: translateZ(0);
+  .phone {
+    border: 40px solid #121212;
+    border-width: 55px 7px;
+    border-radius: 40px;
+    margin: 50px auto;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    animation: fadein 2s;
+  }
+
+  .rotate {
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .table {
+    transform: rotateX(50deg) rotateY(0deg) rotateZ(-30deg);
+    box-shadow: -3px 3px 0 #000, -6px 6px 0 #000, -9px 9px 0 #000,
+      -12px 12px 0 #000, -14px 10px 20px #000;
+  }
+
+  .normal {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    box-shadow: 0px 3px 0 #000, 0px 4px 0 #000, 0px 5px 0 #000, 0px 7px 0 #000,
+      0px 10px 20px #000;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotateX(50deg) rotateY(0deg) rotateZ(-30deg);
+    }
+    50% {
+      transform: rotateX(50deg) rotateY(0deg) rotateZ(-40deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(0deg) rotateZ(-30deg);
+    }
+  }
+}
