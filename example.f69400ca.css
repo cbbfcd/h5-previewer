@@ -4,6 +4,7 @@
 
 .root > div:first-child {
   width: 70%;
+  margin-top: 50px;
 }
 
 .operations_box {

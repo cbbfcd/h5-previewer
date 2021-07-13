@@ -33384,14 +33384,14 @@ var e,
 
   if ("undefined" != typeof document) {
     var o = document.head || document.getElementsByTagName("head")[0],
-        r = document.createElement("style");
-    r.type = "text/css", "top" === t && o.firstChild ? o.insertBefore(r, o.firstChild) : o.appendChild(r), r.styleSheet ? r.styleSheet.cssText = e : r.appendChild(document.createTextNode(e));
+        a = document.createElement("style");
+    a.type = "text/css", "top" === t && o.firstChild ? o.insertBefore(a, o.firstChild) : o.appendChild(a), a.styleSheet ? a.styleSheet.cssText = e : a.appendChild(document.createTextNode(e));
   }
-}(".index-module_wrapper__JMehL {\n  transform: translateZ(0);\n}\n.index-module_wrapper__JMehL .index-module_phone__6IQfK {\n  border: 40px solid #121212;\n  border-width: 55px 7px;\n  border-radius: 40px;\n  margin: 50px auto;\n  overflow: hidden;\n  transition: all 0.5s ease;\n  animation: index-module_fadein__1SVPk 2s;\n}\n.index-module_wrapper__JMehL .index-module_rotate__QkCbU {\n  animation-name: index-module_rotate__QkCbU;\n  animation-duration: 15s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n.index-module_wrapper__JMehL .index-module_table__3o45T {\n  transform: rotateX(50deg) rotateY(0deg) rotateZ(-30deg);\n  box-shadow: -3px 3px 0 #000, -6px 6px 0 #000, -9px 9px 0 #000, -12px 12px 0 #000, -14px 10px 20px #000;\n}\n.index-module_wrapper__JMehL .index-module_normal__iw8Vo {\n  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);\n  box-shadow: 0px 3px 0 #000, 0px 4px 0 #000, 0px 5px 0 #000, 0px 7px 0 #000, 0px 10px 20px #000;\n}\n@keyframes index-module_fadein__1SVPk {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n@keyframes index-module_rotate__QkCbU {\n  0% {\n    transform: rotateX(50deg) rotateY(0deg) rotateZ(-30deg);\n  }\n  50% {\n    transform: rotateX(50deg) rotateY(0deg) rotateZ(-40deg);\n  }\n  100% {\n    transform: rotateX(50deg) rotateY(0deg) rotateZ(-30deg);\n  }\n}\n");
+}(".index-module_wrapper__JMehL {\n  transform: translateZ(0);\n}\n.index-module_wrapper__JMehL .index-module_phone__6IQfK {\n  border: 40px solid #121212;\n  border-width: 55px 7px;\n  border-radius: 40px;\n  margin: 0px auto;\n  overflow: hidden;\n  transition: all 0.5s ease;\n  animation: index-module_fadein__1SVPk 2s;\n}\n.index-module_wrapper__JMehL .index-module_rotate__QkCbU {\n  animation-name: index-module_rotate__QkCbU;\n  animation-duration: 15s;\n  animation-iteration-count: infinite;\n  animation-timing-function: linear;\n}\n.index-module_wrapper__JMehL .index-module_table__3o45T {\n  transform: rotateX(50deg) rotateY(0deg) rotateZ(-30deg);\n  box-shadow: -3px 3px 0 #000, -6px 6px 0 #000, -9px 9px 0 #000, -12px 12px 0 #000, -14px 10px 20px #000;\n}\n.index-module_wrapper__JMehL .index-module_normal__iw8Vo {\n  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);\n  box-shadow: 0px 3px 0 #000, 0px 4px 0 #000, 0px 5px 0 #000, 0px 7px 0 #000, 0px 10px 20px #000;\n}\n@keyframes index-module_fadein__1SVPk {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}\n@keyframes index-module_rotate__QkCbU {\n  0% {\n    transform: rotateX(50deg) rotateY(0deg) rotateZ(-30deg);\n  }\n  50% {\n    transform: rotateX(50deg) rotateY(0deg) rotateZ(-40deg);\n  }\n  100% {\n    transform: rotateX(50deg) rotateY(0deg) rotateZ(-30deg);\n  }\n}\n@media (max-width: 900px) {\n  .index-module_wrapper__JMehL {\n    transform: scale(0.8, 0.8);\n  }\n}\n@media (max-width: 700px) {\n  .index-module_wrapper__JMehL {\n    transform: scale(0.6, 0.6);\n  }\n}\n@media (max-width: 500px) {\n  .index-module_wrapper__JMehL {\n    transform: scale(0.4, 0.4);\n  }\n}\n");
 
-var r = function r(e) {
-  var r = e.perspective,
-      a = void 0 === r ? "1300px" : r,
+var a = function a(e) {
+  var a = e.perspective,
+      r = void 0 === a ? "1300px" : a,
       d = e.wrapperClassName,
       i = void 0 === d ? "" : d,
       p = e.phoneClassName,
@@ -33404,13 +33404,13 @@ var r = function r(e) {
       f = e.mode,
       h = void 0 === f ? "normal" : f,
       c = e.rotate,
-      g = void 0 !== c && c,
-      v = n.useMemo(function () {
+      w = void 0 !== c && c,
+      g = n.useMemo(function () {
     return {
-      perspective: a
+      perspective: r
     };
-  }, [a]),
-      w = n.useMemo(function () {
+  }, [r]),
+      v = n.useMemo(function () {
     return {
       width: l,
       height: s
@@ -33418,14 +33418,14 @@ var r = function r(e) {
   }, [l, s]);
   return n.createElement("div", {
     className: t(o.wrapper, i),
-    style: v
+    style: g
   }, n.createElement("div", {
-    className: t(o.phone, g ? o.rotate : null, o[h], m),
-    style: w
+    className: t(o.phone, w ? o.rotate : null, o[h], m),
+    style: v
   }, u));
 };
 
-exports.default = n.memo(r);
+exports.default = n.memo(a);
 },{"react":"../node_modules/react/index.js","clsx":"../node_modules/clsx/dist/clsx.m.js"}],"index.tsx":[function(require,module,exports) {
 "use strict";
 
@@ -33618,7 +33618,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50783" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52758" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
