@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -17,7 +17,8 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "deploy": "npx gh-pages -d ./example/dist"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -33,6 +34,10 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
+  "homepage": "https://cbbfcd.github.io/h5-previewer/",
+  "bugs": {
+    "url": "https://github.com/cbbfcd/h5-previewer/issues"
+  },
   "name": "h5-previewer",
   "author": "波比小金刚",
   "module": "dist/h5-previewer.esm.js",
@@ -46,6 +51,11 @@
       "path": "dist/h5-previewer.esm.js",
       "limit": "10 KB"
     }
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "Android >= 4.4",
+    "iOS >= 9"
   ],
   "devDependencies": {
     "@size-limit/preset-small-lib": "^5.0.1",
